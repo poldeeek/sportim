@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sportim
+> The application is the web part of a larger student project carried out as part of a credit for the course `Team Programming`.
 
-## Available Scripts
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Setup](#setup)
+* [Screenshots](#screenshots)
 
-In the project directory, you can run:
+## General Information
+The aim of the Sportim project is to bring together people who participate in group sports. The application allows users to find other people in the city and outside who are also interested in the same physical activity. The application allows for the creation of events that can be joined by other users who are looking for members to create a team, or just want to play together.
 
-### `npm start`
+> The frontend of the application is based on React.js library, while the backend and the database is based on Firebase platform.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
+- React.js - version 16.13.0
+- Redux - version 4.0.5
+- Firebase - version 7.11.0
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup
 
-### `npm test`
+1. Install locally all dependecies in project directory using commands:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> `cd ../sportim`<br>
+> `npm install`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Create `.env` file in main directory and set environment variables:
+  	* `REACT_APP_FB_API` - firebase API key (`apiKey` variable in firebase config object)
+  	* `REACT_APP_FB_MESS_SENDER_ID` - Google Cloud Messaging Sender ID (`messagingSenderId`  variable in firebase config object)
+  	* `REACT_APP_FB_APP_ID` -firebase project ID (`appId`  variable in firebase config object)
+  	* `REACT_APP_FB_MEASUREMENT_ID` - ID for Google Analytics (`measurementId`  variable in firebase config object)
+  	* `REACT_APP_MAP_API` - API key for Google Maps
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+2. Run project:
+> `npm run start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Screenshots
+![Sportim](https://user-images.githubusercontent.com/44229717/118544878-29208680-b756-11eb-95d5-7b37393f6dc3.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
